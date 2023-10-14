@@ -4,7 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
-  imports: [
+  imports: [ 
     UsersModule,
     ConfigModule.forRoot({
       envFilePath: [`.env.stage.${process.env.STAGE}`]
